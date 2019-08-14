@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		524883EF2302EA2B009BDB78 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524883EE2302EA2B009BDB78 /* CircleButton.swift */; };
+		524883F12302F285009BDB78 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 524883F02302F285009BDB78 /* test.mp3 */; };
 		5293E5BD2302CB0600EE61DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293E5BC2302CB0600EE61DF /* AppDelegate.swift */; };
 		5293E5BF2302CB0600EE61DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293E5BE2302CB0600EE61DF /* ViewController.swift */; };
 		5293E5C22302CB0600EE61DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5293E5C02302CB0600EE61DF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		524883EE2302EA2B009BDB78 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		524883F02302F285009BDB78 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		5293E5B92302CB0600EE61DF /* Scribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5293E5BC2302CB0600EE61DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5293E5BE2302CB0600EE61DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		524883EB2302E9FD009BDB78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5293E5BE2302CB0600EE61DF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		524883EC2302EA0E009BDB78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				524883EE2302EA2B009BDB78 /* CircleButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		524883ED2302EA13009BDB78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		524883F22302F83D009BDB78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				524883F02302F285009BDB78 /* test.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		5293E5B02302CB0600EE61DF = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +91,11 @@
 		5293E5BB2302CB0600EE61DF /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				524883F22302F83D009BDB78 /* Resource */,
+				524883ED2302EA13009BDB78 /* Model */,
+				524883EC2302EA0E009BDB78 /* View */,
+				524883EB2302E9FD009BDB78 /* Controller */,
 				5293E5BC2302CB0600EE61DF /* AppDelegate.swift */,
-				5293E5BE2302CB0600EE61DF /* ViewController.swift */,
 				5293E5C02302CB0600EE61DF /* Main.storyboard */,
 				5293E5C62302CB0800EE61DF /* Assets.xcassets */,
 				5293E5C82302CB0800EE61DF /* LaunchScreen.storyboard */,
@@ -127,6 +165,7 @@
 			files = (
 				5293E5CA2302CB0800EE61DF /* LaunchScreen.storyboard in Resources */,
 				5293E5C72302CB0800EE61DF /* Assets.xcassets in Resources */,
+				524883F12302F285009BDB78 /* test.mp3 in Resources */,
 				5293E5C22302CB0600EE61DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +180,7 @@
 				5293E5BF2302CB0600EE61DF /* ViewController.swift in Sources */,
 				5293E5BD2302CB0600EE61DF /* AppDelegate.swift in Sources */,
 				5293E5C52302CB0600EE61DF /* Scribe.xcdatamodeld in Sources */,
+				524883EF2302EA2B009BDB78 /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK457J9UDQ;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK457J9UDQ;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
